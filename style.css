@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+@-webkit-keyframes scale-out-tl {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 0 0;
+                  transform-origin: 0 0;
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          -webkit-transform-origin: 0 0;
+                  transform-origin: 0 0;
+          opacity: 1;
+        }
+      }
+      @keyframes scale-out-tl {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 0 0;
+                  transform-origin: 0 0;
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          -webkit-transform-origin: 0 0;
+                  transform-origin: 0 0;
+          opacity: 1;
+        }
+      }
+      
+
+
+@-webkit-keyframes scale-in-tl {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-tl {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  
+
+header{
+    height: 8%;
+}
+
+body {
+   background: linear-gradient(to top, rgb(247, 153, 90), rgb(106, 178, 216) 20%, rgb(16, 22, 56) 70% );
+   
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 90px;
+}
+
+#menubar{
+    display: none;
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 8px;
+    height: 200px;
+    background-color: rgba(47, 46, 46, 0.182);
+}
+
+
+
+ li{
+    display: block;
+    border: solid black 1px;
+    margin: 20px;
+    padding: 4px;
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+   
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.material-icons{
+    cursor: pointer;
+    margin: 10px;
+    padding: 4px;
+    margin-top: 160px;
+    color: white;
+   
+}
+
+#btnMenu{
+        font-size: 50px;
+}
+
+ ul>li:hover {
+    background-color: rgba(123, 120, 120, 0.102);
+    box-shadow: 5px 5px 5px rgb(51, 51, 51);
+}
+
+.animacao {
+        animation: scale-in-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.animacaoSaida{
+        animation: scale-out-tl 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
